@@ -1,6 +1,5 @@
-
 class Task:
-    def __init__(self , title , description = None , start_date = None , end_date = None , done = False):
+    def __init__(self, title, description=None, start_date=None, end_date=None, done=False):
         self.title = title
         self.description = description
         self.start_date = start_date
@@ -9,4 +8,3 @@ class Task:
 
     def __str__(self) -> str:
         return f'{self.title}, {self.description}, {self.start_date}, {self.end_date}, {self.done}'
-

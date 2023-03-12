@@ -1,8 +1,10 @@
-from datetime import datetime
 from argparse import Namespace
-from .Task import Task
-from datetime import  date
+from datetime import date
+from datetime import datetime
+
 from tabulate import tabulate
+
+from .Task import Task
 
 
 class TaskController:
@@ -109,10 +111,6 @@ class TaskController:
         with open(self.file_name, 'w') as f:
             for task in tasks:
                 self.add_task(Namespace(**task))
-
-
-
-
 
     def reset_all_tasks(self, *args):
         with open(self.file_name, 'w') as f:
