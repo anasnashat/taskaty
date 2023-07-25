@@ -1,7 +1,6 @@
 from argparse import Namespace
 from datetime import date
 from datetime import datetime
-
 from tabulate import tabulate
 
 from .Task import Task
